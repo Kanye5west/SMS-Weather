@@ -9,8 +9,8 @@ Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_key = "api_key"
 
 parameters = {
-    "lat": 14.126241,
-    "lon": 121.177266,
+    "lat": 14,
+    "lon": 121,
     "appid": api_key,
     "cnt": 4,
 }
@@ -29,7 +29,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(body= "Bring an Umbrella!, This is from Weather SMS :)",
-                                     from_= '+15752227571',
-                                     to= '+639304170180')
+                                     from_= 'from number',
+                                     to= 'end number')
 
     print(message.sid)
